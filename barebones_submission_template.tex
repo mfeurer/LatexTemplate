@@ -39,24 +39,24 @@
 % document. As a default we suggest author--year citations; for bibtex and
 % natbib you may use:
 
-\usepackage{natbib}
-\bibliographystyle{apalike}
+%\usepackage{natbib}
+%\bibliographystyle{apalike}
 
 % and for biber and biblatex you may use:
 
-% \usepackage[%
-%   backend=biber,
-%   style=authoryear-comp,
-%   sortcites=true,
-%   natbib=true,
-%   giveninits=true,
-%   maxcitenames=2,
-%   doi=false,
-%   url=true,
-%   isbn=false,
-%   dashed=false
-% ]{biblatex}
-% \addbibresource{...}
+\usepackage[%
+   backend=biber,
+   style=authoryear-comp,
+   sortcites=true,
+   natbib=true,
+   giveninits=true,
+   maxcitenames=2,
+   doi=false,
+   url=true,
+   isbn=false,
+   dashed=false
+]{biblatex}
+\addbibresource{lib.bib}
 
 \title{Example Submission for AutoML 2022}
 
@@ -107,6 +107,10 @@
 \end{abstract}
 
 \section{Limitations and Broader Impact Statement}
+
+\cite{chen-gecco18a}
+
+\cite{chen-arxiv18a}
 
 % The 9 pages allocated for the main paper must include a discussion of limitations 
 % and a broader impact statement regarding the approach, datasets and applications 
@@ -340,7 +344,7 @@
 
 % and for biber / biblatex, use:
 
-% \printbibliography
+\printbibliography
 
 % supplemental material -- everything hereafter will be suppressed during
 % submission time if the hidesupplement option is provided!
